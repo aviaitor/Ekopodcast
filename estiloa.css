@@ -1,0 +1,133 @@
+:root {
+  --berdea: #27ae60;
+  --laranja: #e67e22;
+  --testua: #2c3e50;
+  --grisa: #7f8c8d;
+  --zuria: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--zuria);
+  color: var(--testua);
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--berdea);
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logoa {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--berdea);
+  text-decoration: none;
+}
+
+.logoa span { color: var(--laranja); }
+
+nav a {
+  color: var(--testua);
+  text-decoration: none;
+  margin-left: 1.2rem;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+nav a:hover { color: var(--berdea); }
+
+.intro { margin-bottom: 3rem; }
+
+.intro h1 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.intro p {
+  color: var(--grisa);
+  font-size: 1.05rem;
+}
+
+.sarrera {
+  padding: 2rem 0;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.sarrera:last-of-type { border-bottom: none; }
+
+.sarrera h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.sarrera h2 a {
+  color: var(--testua);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.sarrera h2 a:hover { color: var(--laranja); }
+
+.data {
+  font-size: 0.85rem;
+  color: var(--grisa);
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.laburpena {
+  margin-bottom: 1.2rem;
+  color: #34495e;
+}
+
+audio {
+  width: 100%;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+}
+
+.entzun-btn {
+  display: inline-block;
+  background: var(--berdea);
+  color: var(--zuria);
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.entzun-btn:hover { background: var(--laranja); }
+
+footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #ecf0f1;
+  text-align: center;
+  color: var(--grisa);
+  font-size: 0.85rem;
+}
+
+footer a { color: var(--berdea); text-decoration: none; }
+
+@media (max-width: 600px) {
+  header { flex-direction: column; align-items: flex-start; }
+  nav a { margin-left: 0; margin-right: 1rem; }
+  .intro h1 { font-size: 1.6rem; }
+}
